@@ -1,5 +1,5 @@
 <?php
-include 'conn.php';
+require_once __DIR__ . '/conn.php';
 session_start();
 $userCountResult = $conn->query("SELECT COUNT(*) AS total_users FROM login_table");
 $totalUsers = 0;
